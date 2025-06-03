@@ -158,7 +158,7 @@ const Nav = () => {
 
           {/* Mobile Donate Button */}
           <div className="p-6 border-t border-gray-100">
-            <Link to="/donation" onClick={closeMenu}>
+            <Link to="/donations" onClick={closeMenu}>
               <button className="w-full bg-gradient-to-r from-emerald-600 to-blue-600 text-white py-3 px-6 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-semibold">
                 Donate Now
               </button>
@@ -189,7 +189,7 @@ const Nav = () => {
             isMenuOpen ? "opacity-0 pointer-events-none" : "opacity-100"
           }`}
         >
-          <Link to="/donation" className="text-sm font-medium hover:underline">
+          <Link to="/donations" className="text-sm font-medium hover:underline">
             💚 Support Our Mission - Donate Today
           </Link>
         </div>
