@@ -134,7 +134,7 @@ export default function WorldLifeHomepage() {
             <p className="text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-300">
               {heroSlides[currentSlide].subtitle}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
+            <div className="w-full flex flex-col sm:flex-row gap-4 items-center justify-center animate-fade-in-up animation-delay-600">
               <Link to="/contacts">
                 <button className="bg-gradient-to-r from-emerald-600 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
                   Join Our Mission
@@ -142,7 +142,7 @@ export default function WorldLifeHomepage() {
                 </button>
               </Link>
 
-              <a href="https://youtu.be/PL28bHZxVNE" target="_blank">
+              <a href="https://youtu.be/e-yAO267tvE" target="_blank">
                 <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 flex items-center justify-center">
                   <Play className="mr-2 h-5 w-5" />
                   Watch Our Story
