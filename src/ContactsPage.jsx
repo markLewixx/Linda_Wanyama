@@ -208,7 +208,7 @@ export default function ContactsPage() {
           
           {/* Quick Contact Icons */}
           <div className="flex flex-wrap justify-center gap-6 animate-fade-in-up animation-delay-600">
-            <a href="tel:+254201234567" className="flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+            <a href="tel:+254759849050" className="flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
               <Phone className="h-5 w-5 mr-3" />
               <span>Call Us</span>
             </a>
