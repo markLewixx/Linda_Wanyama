@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
+import { Link } from "react-router-dom";
 
 export default function WorldLifeHomepage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -134,14 +135,19 @@ export default function WorldLifeHomepage() {
               {heroSlides[currentSlide].subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
-              <button className="bg-gradient-to-r from-emerald-600 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
-                Join Our Mission
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 flex items-center justify-center">
-                <Play className="mr-2 h-5 w-5" />
-                Watch Our Story
-              </button>
+              <Link to="/contacts">
+                <button className="bg-gradient-to-r from-emerald-600 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
+                  Join Our Mission
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </button>
+              </Link>
+
+              <a href="https://youtu.be/e-yAO267tvE" target="_blank">
+                <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 flex items-center justify-center">
+                  <Play className="mr-2 h-5 w-5" />
+                  Watch Our Story
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -353,7 +359,7 @@ export default function WorldLifeHomepage() {
       </section>
 
       {/* Footer */}
-     <Footer></Footer>
+      <Footer></Footer>
 
       <style jsx>{`
         @keyframes fade-in-up {
