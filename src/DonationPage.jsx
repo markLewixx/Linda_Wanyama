@@ -15,7 +15,6 @@ import {
   Mail,
   User,
   MapPin,
-  House,
   X,
 } from "lucide-react";
 import Nav from "./components/Nav";
