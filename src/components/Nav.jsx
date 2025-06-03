@@ -91,7 +91,7 @@ const Nav = () => {
 
           {/* Desktop Donate Button */}
           <div className="hidden md:block">
-            <a href="/donation">
+            <a href="/donations">
               <button className="bg-gradient-to-r from-emerald-600 to-blue-600 text-white px-6 py-2 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-semibold">
                 Donate Now
               </button>
