@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Globe, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -79,23 +80,23 @@ const Nav = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.to}
-                href={link.to}
+                to={link.to}
                 className="text-gray-700 hover:text-emerald-600 transition-colors duration-300 font-medium"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* Desktop Donate Button */}
           <div className="hidden md:block">
-            <a href="/donations">
+            <Link to="/donations">
               <button className="bg-gradient-to-r from-emerald-600 to-blue-600 text-white px-6 py-2 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-semibold">
                 Donate Now
               </button>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -140,9 +141,9 @@ const Nav = () => {
           <div className="flex-1 py-6">
             <div className="space-y-2">
               {navLinks.map((link, index) => (
-                <a
+                <Link
                   key={link.to}
-                  href={link.to}
+                  to={link.to}
                   onClick={closeMenu}
                   className="flex items-center px-6 py-4 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-300 group"
                   style={{ animationDelay: `${index * 0.1}s` }}
@@ -150,18 +151,18 @@ const Nav = () => {
                   <span className="font-medium group-hover:translate-x-1 transition-transform duration-300">
                     {link.label}
                   </span>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
 
           {/* Mobile Donate Button */}
           <div className="p-6 border-t border-gray-100">
-            <a href="/donation" onClick={closeMenu}>
+            <Link to="/donation" onClick={closeMenu}>
               <button className="w-full bg-gradient-to-r from-emerald-600 to-blue-600 text-white py-3 px-6 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-semibold">
                 Donate Now
               </button>
-            </a>
+            </Link>
           </div>
 
           {/* Footer */}
@@ -188,9 +189,9 @@ const Nav = () => {
             isMenuOpen ? "opacity-0 pointer-events-none" : "opacity-100"
           }`}
         >
-          <a href="/donation" className="text-sm font-medium hover:underline">
+          <Link to="/donation" className="text-sm font-medium hover:underline">
             💚 Support Our Mission - Donate Today
-          </a>
+          </Link>
         </div>
       </div>
 
